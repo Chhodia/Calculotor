@@ -33,4 +33,3 @@ multiply.addEventListener("click", () => {
 });
 divide.addEventListener("click", () => {
 });
-

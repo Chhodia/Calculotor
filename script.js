@@ -5,9 +5,8 @@ const divide = document.querySelector('.js-divide');
 const input1 = document.querySelector('.input1');
 const input2 = document.querySelector('.input2');
 const result = document.querySelector('js-result');
+const answer = document.querySelector('.js-result');
 
-let firstValue = input1.value
-let secondValue = input2.value
 
 const Add = (number1, number2) => {
     return number1 + number2
@@ -21,15 +20,25 @@ const Multply = (number1, number2) => {
 const Divide = (number1, number2) => {
     return number1 / number2
 };
-plus.addEventListener('click', () => {
-    answer.textContent = (Add(Number(input1.value)
-         ,Number(input2.value)))
-         input1.value = ""
+
+const Clear = () => {
+    input1.value = ""
          input2.value = ""
+}
+
+plus.addEventListener('click', () => {
+    answer.textContent = Add(parseInt(input1.value),parseInt(input2.value))
+         Clear()
 })
 minus.addEventListener("click", () => {
+    answer.textContent = Minus(parseInt(input1.value),parseInt(input2.value))
+         Clear()
 });
 multiply.addEventListener("click", () => {
+    answer.textContent = Multply(parseInt(input1.value),parseInt(input2.value))
+         Clear()
 });
 divide.addEventListener("click", () => {
+    answer.textContent = Divide(parseInt(input1.value),parseInt(input2.value))
+         Clear()
 });

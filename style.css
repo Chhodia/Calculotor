@@ -1,7 +1,26 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 html{
     background-color: antiquewhite;
+}
+
+.body{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.input{
+    font-size:  32px;
+    width: 400px;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 3px solid black;
+    border-radius: 8px;
+    outline: 0;
+    
 }

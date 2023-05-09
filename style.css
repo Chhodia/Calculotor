@@ -4,23 +4,41 @@
 }
 
 html{
-    background-color: antiquewhite;
+    background-color: #FFFFF2;
 }
 
-.body{
-    
+body{
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    align-items: center;
 }
 
 .input{
-    font-size:  32px;
+    font-size: 32px;
     width: 400px;
     height: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 3px solid black;
+    border: 5px solid #008000;
     border-radius: 8px;
-    outline: 0;
+    outline: none;
+}
+
+.operator{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.operator:hover{
+    color: gray;
+    transition: 0.3s;
+}
+
+.text_result{
+    font-size: 70px;
     
 }
